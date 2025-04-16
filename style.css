@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background: #f5f5f5;
+  }
+
+  .logo {
+    background: #dd0d0d;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .carrossel {
+    text-align: center;
+    padding: 4rem;
+    background: #d70d0d;
+  }
+  
+  .beneficios {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+  }
+  
+  .cards-sobre {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+  }
+  
+  .card {
+    background: #f5f5f5;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 30%;
+    background: #d70d0d;
+  }
+  
+  .duvidas {
+    padding: 2rem;
+    background: #d70d0d;
+
+  }
+
+  .orcamento form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 300px;
+    margin: auto;
+  }
+  
+  footer {
+    background: #ccc;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .contato-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.5rem;
+  }
+  
+  .separator {
+    color: #333;
+  }
+  
+  .instagram-link,
+  .whatsapp-link {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+  }
+  
+  .instagram-link:hover,
+  .whatsapp-link:hover {
+    text-decoration: underline;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .review {
+    background: #f5f5f5;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background: #d70d0d;
+  }
+ 
+  .feedbacks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }

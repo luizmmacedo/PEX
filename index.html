@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Van da Tia Lara</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo"><p>Qual logo colocar aqui?</p></div> 
+    <nav>
+      <ul>
+        <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+        <li class="nav-item"><a class="nav-link" href="#info">Informações</a></li>
+        <li class="nav-item"><a class="nav-link" href="#duvidas">Dúvidas</a></li>
+        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <section class="carrossel" id="servicos">   
+    <h1>Quais fotos colocar para o carrosel de imagem?</h1>
+  </section>
+
+  <section class="beneficios" id="info">
+    <div>
+      <h2>Aqui na Van da Tia Lara você encontra:</h2>
+      <div class="logo"><p>Quais informaçoes por aqui?</p></div> 
+      <ul>
+        <li>Ar-condicionado</li>    
+        <li>Bancos Confortáveis</li>
+        <li>Monitora</li>
+        <li>Multimídia</li>
+        <li>Porta Automática</li>
+        <li>Segurança e Conforto</li>
+      </ul>
+    </div>
+    <div class="logo"><p>Uma foto bonita da van para por aqui</p></div> 
+    <div class="imagem-beneficios"> </div>
+  </section>
+
+  
+  <section class="cards-sobre" id="sobre">
+    <div class="card">
+      <h3>História</h3>
+      <p>Nesse espaço</p>
+      <p>Vou verificar</p>
+      <p>O que por na história</p>
+    </div>
+    <div class="card">
+      <h3>Missão</h3>
+      <p>Nesse espaço</p>
+      <p>Vou verificar</p>
+      <p>O que por na missão</p>
+    </div>
+    <div class="card">
+      <h3>Valores</h3>
+      <p>Nesse espaço</p>
+      <p>Vou verificar</p>
+      <p>O que por nos Valores</p>
+    </div>
+  </section>
+
+
+  <section class="duvidas" id="duvidas">
+    <details>
+        <summary>PRINCIPAIS DÚVIDAS SOBRE O TRABALHO</summary>
+        <p> Veficar quais as principais dúvidas que os pais tem</p>
+    </details>
+    
+    <details>
+        <summary>ESCOLAS QUE ATENDEM</summary>
+        <p> Veficar todas as escolas que ela atende</p>
+    </details>
+
+    <details>
+        <summary>PRINCIPAIS BAIRROS</summary>
+        <p> Veficar os principais bairros que ela atende</p>
+    </details>
+
+    <details>
+        <summary>O QUE SABER NA PRIMEIRA VEZ</summary>
+        <p> Por uma introdução para os pais?</p>
+    </details>
+
+    <details>
+        <summary>DICAS PARA OS PAIS</summary>
+        <p> Algumas dicas para passar confiaça, credibilidade entre outros</p>
+    </details>
+  </section>
+
+
+  <section class="feedbacks">
+    <h2>Feedbacks {Adicionar mais??}</h2>
+    <div class="review">
+      <p>⭐️⭐️⭐️⭐️⭐️</p>
+      <h4>Titulo</h4>
+      <p>Feedbacks</p>
+      <p><strong>Nome da Pessoa</strong> - Data</p>
+    </div>
+    <div class="review">
+        <p>⭐️⭐️⭐️⭐️⭐️</p>
+        <h4>Titulo</h4>
+        <p>Feedbacks</p>
+        <p><strong>Nome da Pessoa</strong> - Data</p>
+    </div>
+    <div class="review">
+        <p>⭐️⭐️⭐️⭐️⭐️</p>
+        <h4>Titulo</h4>
+        <p>Feedbacks</p>
+        <p><strong>Nome da Pessoa</strong> - Data</p>
+    </div>
+  </section>
+
+  <!-- Formulário de orçamento -->
+  <section class="orcamento" id="contato">
+    <h2>Faça um orçamento</h2>
+    <p>É rápido e fácil!</p>
+    <p>{Verificar sobre os bairros que atende para deixar pre-definido}</p>
+    <form id="formOrcamento" onsubmit="enviarWhatsApp(event)">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <label for="bairro">Bairro:</label>
+        <input type="text" id="bairro" name="bairro" required>
+        <label for="rua">Rua:</label>
+        <input type="text" id="rua" name="rua" required>
+        <label for="escola">Escola:</label>
+        <input type="text" id="escola" name="escola" required>
+        <button type="submit">Enviar pelo WhatsApp</button>
+    </form>
+  </section>
+
+  <div class="logo"><p>Mais alguma informação?</p></div> 
+
+
+  <footer>
+    <div class="contato-content">
+      <a href="https://www.instagram.com/larramaceddo/" target="_blank" class="instagram-link">📷 Instagram</a>
+      <span class="separator">|</span>
+      <a href="https://wa.me/5547984745728?text=Olá%20Lara,%20vim%20pelo%20seu%20site!%20Gostaria%20de%20saber%20se%20há%20vagas?" target="_blank" class="whatsapp-link">📞 WhatsApp</a>
+    </div>
+    <p>2025 PEX Todos os direitos reservados</p>
+  </footer>
+  
+
+  <script>
+    function enviarWhatsApp(event) {
+        event.preventDefault();
+        const nome = document.getElementById("nome").value;
+        const bairro = document.getElementById("bairro").value;
+        const rua = document.getElementById("rua").value;
+        const escola = document.getElementById("escola").value;
+        const numeroWhatsApp = "47984745728";
+        const texto = `Olá! Lara, meu nome é ${nome}. Eu moro no Bairro ${bairro} e na Rua ${rua}. Gostaria de verificar a disponibilidade de vagas e fazer um orçamento para a escola ${escola}`;
+        const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(texto)}`;
+        window.open(url, "_blank");
+    }
+</script>
+
+</body>
+</html>
