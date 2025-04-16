@@ -1,6 +1,6 @@
 # PEX
  1. Clonar o repositório:
-    git clone https://github.com/luizmmacedo/PEX.git
+git clone https://github.com/luizmmacedo/PEX.git
 
 2. Criar e mudar para sua própria branch (podemos usar o proprio nome)
     git checkout -b nome-da-sua-branch
