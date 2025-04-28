@@ -1,10 +1,5 @@
 
 # PEX
-<<<<<<< HEAD
-=======
- 1. Clonar o repositório:
-git clone https://github.com/luizmmacedo/PEX.git
->>>>>>> 76ca84b64df8509b4da4c111327038885d0eab1a
 
 ## 1. Clonar o repositório:
 
