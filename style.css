@@ -1,131 +1,135 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.5;
-  }
-  
-  header {
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-    background: #f5f5f5;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
 
-  .logo img {
-    width: 100px;  
-    /* height: auto;   */
-  }
-  
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-  }
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background: #f5f5f5;
+}
 
-  nav ul li a {
-    text-decoration: none;   
-    color: #333;   
-    font-size: 1.2rem;   
-    font-weight: 600;   
-   }
-  
-  nav ul li a:hover {
-    color: #08ec08;  
-    transform: translateY(-3px);   
-  }
-  
-  .carrossel {
-    text-align: center;
-    padding: 4rem;
-    background: #d70d0d;
-  }
-  
-  .beneficios {
-    display: flex;
-    justify-content: space-between;
-    padding: 2rem;
-  }
-  
-  .cards-sobre {
-    display: flex;
-    justify-content: space-around;
-    padding: 2rem;
-  }
-  
-  .card {
-    background: #f5f5f5;
-    padding: 1rem;
-    border-radius: 10px;
-    width: 30%;
-    background: #d70d0d;
-  }
-  
-  .duvidas {
-    padding: 2rem;
-    background: #d70d0d;
+.logo img {
+  width: 100px;  
+}
 
-  }
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
 
-  .orcamento form {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    max-width: 300px;
-    margin: auto;
-  }
-  
-  footer {
-    background: #ccc;
-    text-align: center;
-    padding: 1rem;
-  }
+nav ul li a {
+  text-decoration: none;   
+  color: #333;   
+  font-size: 1.2rem;   
+  font-weight: 600;   
+}
 
-  .contato-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-    margin-bottom: 0.5rem;
-  }
-  
-  .separator {
-    color: #333;
-  }
-  
-  .instagram-link,
-  .whatsapp-link {
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-  }
-  
-  .instagram-link:hover,
-  .whatsapp-link:hover {
-    text-decoration: underline;
-  }
-  
-  html {
-    scroll-behavior: smooth;
-  }
+nav ul li a:hover {
+  color: #08ec08;  
+  transform: translateY(-3px);   
+}
 
-  .review {
-    background: #f5f5f5;
-    padding: 1rem;
-    border-radius: 10px;
-    width: 300px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    background: #d70d0d;
-  }
- 
-  .feedbacks {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-  }
+.carrossel,
+.historia,
+.missao,
+.valores {
+  text-align: center;
+  padding: 4rem;
+  background: #d70d0d; 
+  color: #fff; 
+}
+
+.beneficios {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  background: #fff;  
+}
+
+.cards-sobre {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  background: #fff;  
+}
+
+.card {
+  background: #f5f5f5;  
+  padding: 1rem;
+  border-radius: 10px;
+  width: 30%;
+  color: #333;
+}
+
+.duvidas {
+  padding: 2rem;
+  background: #fff; 
+  color: #333; 
+}
+
+.orcamento form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 300px;
+  margin: auto;
+}
+
+footer {
+  background: #ccc;
+  text-align: center;
+  padding: 1rem;
+}
+
+.contato-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+
+.separator {
+  color: #333;
+}
+
+.instagram-link,
+.whatsapp-link {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.instagram-link:hover,
+.whatsapp-link:hover {
+  text-decoration: underline;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.review {
+  background: #f5f5f5; 
+  padding: 1rem;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  color: #333;
+}
+
+.feedbacks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
 
 .frase_efeito {
   display: flex;   
@@ -134,4 +138,76 @@ body {
   text-align: center;   
   font-size: 1.5rem;   
   text-transform: uppercase;   
+}
+
+@media (max-width: 768px) {
+  .cards-sobre, .beneficios {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%; 
+    margin-bottom: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .orcamento form {
+    max-width: 100%;
+  }
+
+  .feedbacks {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .frase_efeito h2 {
+    font-size: 1.2rem; 
+  }
+
+  .carrossel {
+    padding: 2rem 1rem;
+  }
+
+  .cards-sobre {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;  
+    margin-bottom: 1rem; 
+  }
+
+  .duvidas details {
+    margin-bottom: 1rem;  
+  }
+
+  .orcamento form input, 
+  .orcamento form select {
+    font-size: 1rem; 
+  }
+
+  .orcamento form {
+    gap: 1rem;
+    margin: 0 auto; 
+  }
+
+  footer {
+    padding: 2rem 1rem;
+  }
+
+  footer .contato-content {
+    gap: 2rem;
+    justify-content: center;
+  }
 }
