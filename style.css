@@ -12,14 +12,28 @@ body {
     background: #f5f5f5;
   }
 
-  .logo {
-    background: #dd0d0d;
+  .logo img {
+    width: 100px;  
+    /* height: auto;   */
   }
+  
   
   nav ul {
     list-style: none;
     display: flex;
     gap: 1rem;
+  }
+
+  nav ul li a {
+    text-decoration: none;   
+    color: #333;   
+    font-size: 1.2rem;   
+    font-weight: 600;   
+   }
+  
+  nav ul li a:hover {
+    color: #08ec08;  
+    transform: translateY(-3px);   
   }
   
   .carrossel {
@@ -112,3 +126,12 @@ body {
     gap: 1rem;
     justify-content: center;
   }
+
+.frase_efeito {
+  display: flex;   
+  justify-content: center;   
+  align-items: center;   
+  text-align: center;   
+  font-size: 1.5rem;   
+  text-transform: uppercase;   
+}
