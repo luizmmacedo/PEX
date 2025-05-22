@@ -3,87 +3,135 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Transporte escolar seguro, acolhedor e confiável em Joinville. Conheça a Van da Tia Lara!">
+  <meta name="keywords" content="transporte escolar, Joinville, van escolar, Tia Lara, segurança infantil">
+  <meta name="author" content="Tia Lara 118 Transporte Escolar">
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   <title>Van da Tia Lara</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
 
   <header>
-    <div class="logo">
-      <img src="img/logo1.png" alt="Logo da Empresa" />
-    </div>      
-    <nav>
-      <ul>
-        <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
-        <li class="nav-item"><a class="nav-link" href="#info">Informações</a></li>
-        <li class="nav-item"><a class="nav-link" href="#duvidas">Dúvidas</a></li>
-        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-6">
+          <div class="logo">
+            <img src="img/logo1.png" alt="Logo da Empresa" class="img-fluid" />
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <nav class="navbar navbar-expand-md navbar-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+                <li class="nav-item"><a class="nav-link" href="#info">Informações</a></li>
+                <li class="nav-item"><a class="nav-link" href="#duvidas">Dúvidas</a></li>
+                <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
   </header>
-
-
+  
   <section class="carrossel" id="servicos">   
-    <h1>fotos para o carrossel de imagem</h1>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">  
+          <img src="img/van1.jpeg" class="d-block w-100" alt="Imagem 1">
+        </div>
+        <div class="carousel-item">
+          <img src="img/van2.jpeg" class="d-block w-100" alt="Imagem 2">
+        </div>
+        <div class="carousel-item">
+          <img src="img/van3.jpeg" class="d-block w-100" alt="Imagem 3">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
+      </a>
+    </div>
   </section>
-
+  
   <section class="frase_efeito" id="info">
     <div>
       <h2>Confiança, amor e cuidado transmitidos entre gerações</h2>
     </div>
   </section>
-
+  
   <section class="beneficios" id="beneficios">
-    <div>
-      <h2>Aqui na Van da Tia Lara você encontra:</h2>
-      <ul>
-        <li>Ar-condicionado</li>    
-        <li>Bancos Confortáveis</li>
-        <li>Monitora</li>
-        <li>Multimídia</li>
-        <li>Porta Automática</li>
-        <li>Segurança e Conforto</li>
-      </ul>
+    <div class="container">
+      <div class="row align-items-center"> 
+        <div class="col-md-6">
+          <h2>Aqui na Van da Tia Lara você encontra:</h2>
+          <ul>
+            <li>Ar-condicionado</li>    
+            <li>Bancos Confortáveis</li>
+            <li>Monitora</li>
+            <li>Multimídia</li>
+            <li>Porta Automática</li>
+            <li>Segurança e Conforto</li>
+          </ul>
+        </div>
+        
+        <div class="col-md-6">
+          <div class="imagem-beneficios">
+            <img src="img/van.jpeg" alt="Imagem da van" class="img-fluid">
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="logo"><p>Uma da van para por aqui</p></div> 
-    <div class="imagem-beneficios"> </div>
+  </section>
+  
+  <section class="feedbacks"> 
+    <div class="review">
+      <div class="titulo"><h4>Serviço excelente!</h4></div>
+      <p>A Helena adora o transporte. Sempre pontuais e muito atenciosos. Me sinto segura deixando ela ir e voltar com vocês.</p>
+      <p><strong>Patrícia Oliveira</strong> - Março/2025 </p>
+      <div class="titulo"><h4><p>⭐️⭐️⭐️⭐️⭐️</p></h4></div>
+    </div>
+    <div class="review">
+      <div class="titulo"><h4>Recomendo demais</h4></div>
+      <p>É nítido o cuidado que têm com o Vitor e com as demais crianças e são muito responsáveis. Super recomendo!</p>
+      <p><strong>Rodrigo Martins</strong> - Abril/2025</p>
+      <div class="titulo"><h4><p>⭐️⭐️⭐️⭐️⭐️</p></h4></div>
+    </div>
+    <div class="review">
+      <div class="titulo"><h4>Confiança total!</h4></div>
+      <p>Meus dois filhos usam o transporte e nunca tive nenhuma preocupação. Equipe muito educada e comprometida.</p>
+      <p><strong>Carla Ferreira</strong> - Maio/2025</p>
+      <div class="titulo"><h4><p>⭐️⭐️⭐️⭐️⭐️</p></h4></div>
+    </div>
   </section>
 
   
-  <section class="cards-sobre" id="sobre">
-    <div class="card">
-      <h3>História</h3>
-      <p>Podemos juntar</p>
-      <p>umas informações</p>
-      <p>que tem no doc</p>
-    </div>
-    <div class="card">
-      <h3>Missão</h3>
-      <p>Podemos juntar</p>
-      <p>umas informações</p>
-      <p>que tem no doc</p>
-    </div>
-    <div class="card">
-      <h3>Valores</h3>
-      <p>Podemos juntar</p>
-      <p>umas informações</p>
-      <p>que tem no doc</p>
-    </div>
-  </section>
-
-
   <section class="duvidas" id="duvidas">
     <details>
-      <summary>PRINCIPAIS DÚVIDAS SOBRE O TRABALHO</summary>
+      <p><summary>PRINCIPAIS DÚVIDAS SOBRE O TRABALHO</summary></p>
       <p>É possível a contratação de somente um itinerário, só ida ou volta para a escola?</p>
-      <p><strong>Sim, oferecemos a flexibilização conforme a necessidade da família! </strong></p>
+      <p><strong>Sim, oferecemos a flexibilização conforme a necessidade da família!</strong></p>
     </details>
     
     <details>
-      <summary>ESCOLAS QUE ATENDEMOS</summary>
+      <p><summary>ESCOLAS QUE ATENDEMOS</summary></p>
       <ul>
         <li>Escola Municipal Wittch Freitag</li>
         <li>Escola Municipal Eladir Skibinski</li>
@@ -96,7 +144,7 @@
     </details>
 
     <details>
-      <summary>PRINCIPAIS BAIRROS QUE ATENDEMOS</summary>
+      <p><summary>PRINCIPAIS BAIRROS QUE ATENDEMOS</summary></p>
       <ul>
         <li>Iririú</li>
         <li>Comasa</li>
@@ -104,9 +152,9 @@
         <li>Jardim Iririú</li>
       </ul>
     </details>
-  
+    
     <details>
-      <summary>O QUE SABER NA PRIMEIRA VEZ</summary>
+      <p><summary>O QUE SABER NA PRIMEIRA VEZ</summary></p>
       <p>
         Prezamos pela pontualidade e pela segurança de todas as crianças. Nossos horários são cuidadosamente planejados para garantir que nenhum aluno chegue atrasado à escola.
       </p>
@@ -119,7 +167,7 @@
     </details>
     
     <details>
-      <summary>DICAS PARA OS PAIS</summary>
+      <p><summary>DICAS PARA OS PAIS</summary></p>
       <p>
         Sempre recomendamos que os pais agendem uma visita presencial com o transportador escolar para conhecer pessoalmente o veículo e o motorista responsável pelo transporte da criança.
       </p>
@@ -131,81 +179,114 @@
       </p>
     </details>
   </section>
-
-
-  <section class="feedbacks"> 
-    <div class="review">
-      <p>⭐️⭐️⭐️⭐️⭐️</p>
-      <h4>Titulo</h4>
-      <p>Feedbacks</p>
-      <p><strong>Nome da Pessoa</strong> - Data</p>
+  
+  <section class="cards-sobre" id="sobre">
+    <div class="card" style="background-color: #1676fc75; border-radius: 40px;">
+      <div class="titulo">
+        <h3><p>História</p></h3>
+      </div>
+      <div class="titulo">
+        <p><strong><h5>🚐 Mais de 25 anos de dedicação ao transporte escolar</h5></strong></p>
+      </div>
+      Tudo começou com minha mãe, que por muitos anos se dedicou ao transporte de crianças com carinho e 
+      responsabilidade. Desde pequena, acompanhei de perto esse trabalho e aprendi o valor da confiança, do cuidado e da segurança.</p>
+      Hoje, sigo esse legado com a mesma dedicação, oferecendo um serviço acolhedor, seguro e confiável para crianças e adolescentes em seus trajetos diários.</p>
     </div>
-    <div class="review">
-      <p>⭐️⭐️⭐️⭐️⭐️</p>
-      <h4>Titulo</h4>
-      <p>Feedbacks</p>
-      <p><strong>Nome da Pessoa</strong> - Data</p>
+    
+    <div class="card" style="background-color: #1676fc75; border-radius: 40px;">
+      <div class="titulo">
+        <h3><p>Missão</p></h3>
+      </div>
+      <div class="titulo">
+        <p><strong><h5>🎯 Compromisso com segurança, confiança e acolhimento</h5></strong></p>
+      </div>
+      <p>Nossa missão é oferecer um transporte escolar seguro, confiável e acolhedor, garantindo 
+        tranquilidade às famílias e bem-estar aos passageiros em seus trajetos diários.</p>
+      <p>Atuamos com responsabilidade e zelo, priorizando a segurança em cada trajeto e construindo uma 
+        relação de confiança com pais e responsáveis. Constantemente aprimorando nosso serviço, com atenção 
+        aos detalhes e respeito às necessidades de cada família atendida.</p>
     </div>
-    <div class="review">
-      <p>⭐️⭐️⭐️⭐️⭐️</p>
-      <h4>Titulo</h4>
-      <p>Feedbacks</p>
-      <p><strong>Nome da Pessoa</strong> - Data</p>
+    
+    <div class="card" style="background-color: #1676fc75; border-radius: 40px;">
+      <div class="titulo">
+        <h3><p>Valores</p></h3>
+      </div>
+      <div class="titulo">
+        <p><strong><h5>🌟 Nossos princípios fundamentais</h5></strong></p>
+      </div>
+      <p>📌 Profissionalismo para garantir qualidade e cuidado.</p>
+      <p>📌 Confiança construída dia a dia com as famílias.</p>
+      <p>📌 Segurança em primeiro lugar, sempre.</p>
+      <p>📌 Carinho e atenção em cada detalhe.</p>
+      <p>📌 Responsabilidade em cada trajeto.</p>
+      <p>📌 Respeito mútuo e cordialidade.</p>
     </div>
   </section>
 
-  <section class="orcamento" id="contato">
-    <h2>Faça um orçamento</h2>
-    <p>É rápido e fácil!</p>
-    <form id="formOrcamento" onsubmit="enviarWhatsApp(event)">
-      <label for="nome">Nome:</label>
-      <input type="text" id="nome" name="nome" placeholder="Escreva seu nome" required>
-  
-      <label for="bairro">Bairro:</label>
-      <select id="bairro" name="bairro" required onchange="mostrarOutro('bairro')">
-        <option value="">Selecione o bairro</option>
-        <option value="Iririú">Iririú</option>
-        <option value="Jardim Iririú">Jardim Iririú</option>
-        <option value="Comasa">Comasa</option>
-        <option value="Aventureiro">Aventureiro</option>
-        <option value="Boa Vista">Boa Vista</option>
-        <option value="Vila Cubatão">Vila Cubatão</option>
-        <option value="Fátima">Fátima</option>
-        <option value="Costa e Silva">Costa e Silva</option>
-        <option value="outro">Outro</option>
-      </select>
-  
-      <div id="outroBairroDiv" style="display:none;">
-        <label for="outroBairro">Digite seu bairro:</label>
-        <input type="text" id="outroBairro" name="outroBairro" placeholder="Escreva o nome do bairro"> 
-      </div>
-  
-      <label for="rua">Rua:</label>
-      <input type="text" id="rua" name="rua" placeholder="Escreva sua rua" required>
-  
-      <label for="escola">Escola:</label>
-      <select id="escola" name="escola" required onchange="mostrarOutro('escola')">
-        <option value="">Selecione a escola</option>
-        <option value="Escola Municipal Wittch Freitag">Escola Municipal Wittch Freitag</option>
-        <option value="Escola Municipal Eladir Skibinski">Escola Municipal Eladir Skibinski</option>
-        <option value="Escola de Educação Básica Maria Amim Ghanem">Escola de Educação Básica Maria Amim Ghanem</option>
-        <option value="Colégio Santo Antônio">Colégio Santo Antônio</option>
-        <option value="CEI Odorico Fortunato">CEI Odorico Fortunato</option>
-        <option value="CEI Arte e Vida">CEI Arte e Vida</option>
-        <option value="CEI Castelo Branco">CEI Castelo Branco</option>
-        <option value="outro">Outro</option>
-      </select>
-  
-      <div id="outroEscolaDiv" style="display:none;">
-        <label for="outroEscola">Digite o nome da escola:</label>
-        <input type="text" id="outroEscola" placeholder="Escreva o nome da escola" name="outroEscola">
-      </div>
-  
-      <button type="submit">Enviar pelo WhatsApp</button>
-    </form>
-  </section>
+  <section class="formulario" id="contato"><br>
+    <div class="orcamento"> 
 
-<footer>
+      <div class="titulo"><br><h2>Faça um orçamento</h2></br></div>
+      <div class="titulo"><p>É rápido e fácil!</p></div>
+
+      <form id="formOrcamento" onsubmit="enviarWhatsApp(event)">
+        
+        <div class="form-group">
+          <strong><label for="nome">Nome:</label></strong>
+          <input type="text" class="form-control" id="nome" name="nome" placeholder="Escreva seu nome" required>
+        </div>
+        
+        <div class="form-group">
+          <strong><label for="bairro">Bairro:</label></strong>
+          <select class="form-control" id="bairro" name="bairro" required onchange="mostrarOutro('bairro')">
+            <option value="">Selecione o bairro</option>
+            <option value="Iririú">Iririú</option>
+            <option value="Jardim Iririú">Jardim Iririú</option>
+            <option value="Comasa">Comasa</option>
+            <option value="Aventureiro">Aventureiro</option>
+            <option value="Boa Vista">Boa Vista</option>
+            <option value="Vila Cubatão">Vila Cubatão</option>
+            <option value="Fátima">Fátima</option>
+            <option value="Costa e Silva">Costa e Silva</option>
+            <option value="outro">Outro</option>
+          </select>
+        </div>
+  
+        <div id="outroBairroDiv" class="form-group" style="display:none;">
+          <strong><label for="outroBairro">Digite seu bairro:</label></strong>
+          <input type="text" class="form-control" id="outroBairro" name="outroBairro" placeholder="Escreva o nome do bairro">
+        </div>
+  
+        <div class="form-group">
+          <strong><label for="rua">Rua:</label></strong>
+          <input type="text" class="form-control" id="rua" name="rua" placeholder="Escreva sua rua" required>
+        </div>
+  
+        <div class="form-group">
+          <strong><label for="escola">Escola:</label></strong>
+          <select class="form-control" id="escola" name="escola" required onchange="mostrarOutro('escola')">
+            <option value="">Selecione a escola</option>
+            <option value="Escola Municipal Wittch Freitag">Escola Municipal Wittch Freitag</option>
+            <option value="Escola Municipal Eladir Skibinski">Escola Municipal Eladir Skibinski</option>
+            <option value="Escola de Educação Básica Maria Amim Ghanem">Escola de Educação Básica Maria Amim Ghanem</option>
+            <option value="Colégio Santo Antônio">Colégio Santo Antônio</option>
+            <option value="CEI Odorico Fortunato">CEI Odorico Fortunato</option>
+            <option value="CEI Arte e Vida">CEI Arte e Vida</option>
+            <option value="CEI Castelo Branco">CEI Castelo Branco</option>
+            <option value="outro">Outro</option>
+          </select>
+        </div>
+  
+        <div id="outroEscolaDiv" class="form-group" style="display:none;">
+          <strong><label for="outroEscola">Digite o nome da escola:</label></strong>
+          <input type="text" class="form-control" id="outroEscola" name="outroEscola" placeholder="Escreva o nome da escola">
+        </div>
+  
+        <button type="submit" class="btn btn-primary">Enviar pelo WhatsApp</button><p></p>
+      </form>
+    </div>
+  </section>     
+  <footer>
   <div class="footer-content">
     <div class="contato-content">
       <a href="https://www.instagram.com/larramaceddo/" class="instagram-link" target="_blank">
@@ -220,7 +301,10 @@
     </div>
   </div>
 </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
