@@ -1,5 +1,9 @@
+html {
+  scroll-behavior: smooth;
+  font-family: 'Times New Roman', serif, 'Verdana', 'Tahoma', sans-serif;
+}
+
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.5;
@@ -9,11 +13,12 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
-  background: #f5f5f5;
+  background: linear-gradient(90deg, #1676fc8f, #1676fc);
+
 }
 
 .logo img {
-  width: 100px;  
+  width: 100px;
 }
 
 nav ul {
@@ -23,67 +28,102 @@ nav ul {
 }
 
 nav ul li a {
-  text-decoration: none;   
-  color: #333;   
-  font-size: 1.2rem;   
-  font-weight: 600;   
+  text-decoration: none;
+  color: #9dbeebf5;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 nav ul li a:hover {
-  color: #08ec08;  
-  transform: translateY(-3px);   
+  color: #06828d;
+  transform: translateY(-3px);
 }
 
-.carrossel,
+#carouselExampleIndicators img {
+  max-height: 500px;
+  width: 10%;
+  object-fit: contain;
+  object-position: center;
+  background-color: #1676fc75;
+}
+
 .historia,
 .missao,
 .valores {
   text-align: center;
   padding: 4rem;
-  background: #d70d0d; 
-  color: #fff; 
+  background: #1676fc75; 
+  color: #fff;
 }
 
-.beneficios {
+.beneficios,
+.cards-sobre {
   display: flex;
   justify-content: space-between;
   padding: 2rem;
-  background: #fff;  
-}
-
-.cards-sobre {
-  display: flex;
-  justify-content: space-around;
-  padding: 2rem;
-  background: #fff;  
-}
+  background-color: #1676fc75;
+} 
 
 .card {
-  background: #f5f5f5;  
+  border-radius: 50px; 
+  background-color: #1676fc75;
   padding: 1rem;
   border-radius: 10px;
   width: 30%;
-  color: #333;
+  color: #043478;
+  display: flex;
+}
+
+.titulo {
+  display: flex;
+  justify-content: center;
 }
 
 .duvidas {
   padding: 2rem;
-  background: #fff; 
-  color: #333; 
+  background: #1676fc75;
+  color: #043478;
 }
 
-.orcamento form {
+.duvidas details {
+  margin-bottom: 1rem;
+}
+
+.formulario{
+  background-color: #1676fc75;
+} 
+ 
+form { 
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   max-width: 300px;
   margin: auto;
-}
+} 
 
 footer {
-  background: #ccc;
+  background: linear-gradient(90deg, #1676fc8f, #1676fc);
   text-align: center;
-  padding: 1rem;
+  height: auto;
+  padding: 2rem 1rem;
+  color: white;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+footer a {
+  color: #9dbeebf5;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: #06828d;
+  text-decoration: underline;
 }
 
 .contato-content {
@@ -92,17 +132,16 @@ footer {
   align-items: center;
   gap: 1rem;
   flex-wrap: wrap;
-  margin-bottom: 0.5rem;
 }
 
 .separator {
-  color: #333;
+  color: #043478;
 }
 
 .instagram-link,
 .whatsapp-link {
   text-decoration: none;
-  color: #000;
+  color: #043478;
   font-weight: bold;
 }
 
@@ -111,53 +150,53 @@ footer {
   text-decoration: underline;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 .review {
-  background: #f5f5f5; 
+  border-radius: 50px;
+  background: #1676fc8f;
   padding: 1rem;
   border-radius: 10px;
   width: 300px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  color: #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #043478;
 }
 
 .feedbacks {
+  background-color: #1676fc75;
   display: flex;
   flex-wrap: wrap;
+  align-items: end;
   gap: 1rem;
   justify-content: center;
 }
 
 .frase_efeito {
-  display: flex;   
-  justify-content: center;   
-  align-items: center;   
-  text-align: center;   
-  font-size: 1.5rem;   
-  text-transform: uppercase;   
+  background-color: #043478;
+  color: white;
+  padding: 40px;
+  text-align: center;
 }
 
+.frase_efeito h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+
 @media (max-width: 768px) {
-  .cards-sobre, .beneficios {
+  .cards-sobre,
+  .beneficios {
     flex-direction: column;
     align-items: center;
   }
 
   .card {
-    width: 80%; 
+    width: 100%;
     margin-bottom: 1rem;
   }
 
   nav ul {
     flex-direction: column;
     align-items: center;
-  }
-
-  .orcamento form {
-    max-width: 100%;
   }
 
   .feedbacks {
@@ -171,39 +210,17 @@ html {
   }
 
   .frase_efeito h2 {
-    font-size: 1.2rem; 
+    font-size: 1.2rem;
   }
 
   .carrossel {
     padding: 2rem 1rem;
-  }
+    background-color: #1676fc75;
 
-  .cards-sobre {
-    flex-direction: column; 
-    align-items: center;
-  }
-
-  .card {
-    width: 100%;  
-    margin-bottom: 1rem; 
-  }
-
-  .duvidas details {
-    margin-bottom: 1rem;  
-  }
-
-  .orcamento form input, 
-  .orcamento form select {
-    font-size: 1rem; 
-  }
-
-  .orcamento form {
-    gap: 1rem;
-    margin: 0 auto; 
   }
 
   footer {
-    padding: 2rem 1rem;
+    padding: 1rem 0.5rem;
   }
 
   footer .contato-content {
