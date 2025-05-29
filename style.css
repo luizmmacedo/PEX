@@ -14,7 +14,6 @@ header {
   justify-content: space-between;
   padding: 1rem;
   background: linear-gradient(90deg, #1676fc8f, #1676fc);
-
 }
 
 .logo img {
@@ -29,13 +28,11 @@ nav ul {
 
 nav ul li a {
   text-decoration: none;
-  color: #9dbeebf5;
   font-size: 1.2rem;
   font-weight: 600;
 }
 
 nav ul li a:hover {
-  color: #06828d;
   transform: translateY(-3px);
 }
 
@@ -47,13 +44,16 @@ nav ul li a:hover {
   background-color: #1676fc75;
 }
 
-.historia,
-.missao,
-.valores {
-  text-align: center;
-  padding: 4rem;
-  background: #1676fc75; 
+.frase_efeito {
+  background-color: #043478;
   color: #fff;
+  padding: 40px;
+  text-align: center;
+}
+
+.frase_efeito h2 {
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .beneficios,
@@ -61,17 +61,16 @@ nav ul li a:hover {
   display: flex;
   justify-content: space-between;
   padding: 2rem;
-  background-color: #1676fc75;
-} 
-
-.card {
-  border-radius: 50px; 
-  background-color: #1676fc75;
-  padding: 1rem;
-  border-radius: 10px;
-  width: 30%;
+  font-size: large;
   color: #043478;
-  display: flex;
+  background-color: #1676fc75;
+}
+
+.cards-texto {
+  background-color: #1676fc75; 
+  padding: 1rem;
+  border-radius: 30px;
+  width: 30%;
 }
 
 .titulo {
@@ -81,49 +80,52 @@ nav ul li a:hover {
 
 .duvidas {
   padding: 2rem;
-  background: #1676fc75;
-  color: #043478;
+  background-color: #043478;
+  color: #fff;
 }
 
 .duvidas details {
   margin-bottom: 1rem;
 }
 
+.feedbacks {
+  background-color: #1676fc75;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.review {
+  border-radius: 30px;
+  background: #1676fc75;
+  padding: 1rem;
+  width: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #043478;
+  margin-top: 30px;
+}
+
 .formulario{
   background-color: #1676fc75;
-} 
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
  
-form { 
+form {
+  background-color: #1676fc75; 
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   max-width: 300px;
+  padding: 20px;
   margin: auto;
 } 
 
 footer {
   background: linear-gradient(90deg, #1676fc8f, #1676fc);
-  text-align: center;
   height: auto;
   padding: 2rem 1rem;
-  color: white;
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-}
-
-footer p {
-  margin: 0;
-  font-size: 1rem;
-}
-
-footer a {
-  color: #9dbeebf5;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-footer a:hover {
-  color: #06828d;
-  text-decoration: underline;
 }
 
 .contato-content {
@@ -134,13 +136,8 @@ footer a:hover {
   flex-wrap: wrap;
 }
 
-.separator {
-  color: #043478;
-}
-
 .instagram-link,
 .whatsapp-link {
-  text-decoration: none;
   color: #043478;
   font-weight: bold;
 }
@@ -148,39 +145,8 @@ footer a:hover {
 .instagram-link:hover,
 .whatsapp-link:hover {
   text-decoration: underline;
+  color: #fff;
 }
-
-.review {
-  border-radius: 50px;
-  background: #1676fc8f;
-  padding: 1rem;
-  border-radius: 10px;
-  width: 300px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  color: #043478;
-}
-
-.feedbacks {
-  background-color: #1676fc75;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: end;
-  gap: 1rem;
-  justify-content: center;
-}
-
-.frase_efeito {
-  background-color: #043478;
-  color: white;
-  padding: 40px;
-  text-align: center;
-}
-
-.frase_efeito h2 {
-  font-size: 2rem;
-  font-weight: bold;
-}
-
 
 @media (max-width: 768px) {
   .cards-sobre,
@@ -189,7 +155,7 @@ footer a:hover {
     align-items: center;
   }
 
-  .card {
+  .cards-texto {
     width: 100%;
     margin-bottom: 1rem;
   }
